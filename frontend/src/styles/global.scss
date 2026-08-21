@@ -1,0 +1,51 @@
+@use "./variables" as v;
+
+// Variables are exposed as CSS custom properties so component-level
+// *.module.scss files can consume them with plain var(--x) without an
+// @use import in every file.
+:root {
+  --color-status-normal: #{v.$color-status-normal};
+  --color-status-constrained: #{v.$color-status-constrained};
+  --color-status-critical: #{v.$color-status-critical};
+  --color-status-unavailable: #{v.$color-status-unavailable};
+
+  --color-bg: #{v.$color-bg};
+  --color-surface: #{v.$color-surface};
+  --color-surface-raised: #{v.$color-surface-raised};
+  --color-border: #{v.$color-border};
+  --color-text: #{v.$color-text};
+  --color-text-muted: #{v.$color-text-muted};
+  --color-accent: #{v.$color-accent};
+  --color-danger: #{v.$color-danger};
+
+  --radius-sm: #{v.$radius-sm};
+  --radius-md: #{v.$radius-md};
+  --spacing-xs: #{v.$spacing-xs};
+  --spacing-sm: #{v.$spacing-sm};
+  --spacing-md: #{v.$spacing-md};
+  --spacing-lg: #{v.$spacing-lg};
+
+  --font-family: #{v.$font-family};
+  --font-family-mono: #{v.$font-family-mono};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+button {
+  font-family: inherit;
+}

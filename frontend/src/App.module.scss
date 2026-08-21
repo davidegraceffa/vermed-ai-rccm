@@ -1,0 +1,51 @@
+.app {
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.header {
+  h1 {
+    margin: 0 0 var(--spacing-xs);
+    font-size: 1.5rem;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-family-mono);
+  font-size: 0.85rem;
+}
+
+.connectionOk {
+  color: var(--color-status-normal);
+}
+
+.connectionWarn {
+  color: var(--color-status-constrained);
+}
+
+.userIdBadge {
+  cursor: help;
+  border-bottom: 1px dotted var(--color-text-muted);
+}
+
+.toolbar {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+}
+
+.gridWrapper {
+  position: relative;
+  width: 100%;
+}

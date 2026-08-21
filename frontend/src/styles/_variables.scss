@@ -1,0 +1,25 @@
+// Status colors mirror backend/src/grid/types/cell-status.enum.ts (CELL_STATUS_META).
+// Duplicated on purpose for this exercise; see docs/ARCHITECTURE.md.
+$color-status-normal: #2e7d32;
+$color-status-constrained: #f9a825;
+$color-status-critical: #e64a19;
+$color-status-unavailable: #616161;
+
+$color-bg: #f5f6f8;
+$color-surface: #ffffff;
+$color-surface-raised: #eef0f3;
+$color-border: #d7dbe1;
+$color-text: #1a1d24;
+$color-text-muted: #5b6270;
+$color-accent: #2563eb;
+$color-danger: #d32f2f;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-mono: "SF Mono", "Menlo", monospace;
