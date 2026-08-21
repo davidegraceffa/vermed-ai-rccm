@@ -1,0 +1,13 @@
+{
+  "name": "scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "load-test": "node load-test.mjs",
+    "measure-snapshot": "node measure-snapshot.mjs"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}
